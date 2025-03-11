@@ -25,7 +25,7 @@ type Task struct {
 func main() {
 	var err error
 	// Establish a connection to the PostgreSQL database
-	connStr := "user=postgres password=yourpassword dbname=task_management sslmode=disable" // Update with your password
+	connStr := "user=postgres password=aditi@12345 dbname=task_management sslmode=disable"
 	db, err = sql.Open("postgres", connStr)
 	if err != nil {
 		log.Fatal("Unable to connect to the database:", err)
